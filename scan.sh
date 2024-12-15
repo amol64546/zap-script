@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Check if SWAGGER_DOC_URL is set
+if [[ -z "$SWAGGER_DOC_URL" ]]; then
+  echo "Error: SWAGGER_DOC_URL is not defined. Please set it before running the script."
+  exit 1
+fi
+
 # Configuration
 ZAP_API_KEY="gaianmobius"
 ZAP_HOST="https://zap.aidtaas.com"
