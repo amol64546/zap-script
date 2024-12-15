@@ -22,6 +22,8 @@ report=$(curl -s -G "${ZAP_HOST}/OTHER/core/other/jsonreport/" \
 
 # Modify field names in the report
 formatted_report=$(echo "$report" | jq 'with_entries(if .key[0:1] == "@" then .key |= .[1:] else . end)')
+# Rename the "generated" field to "createdAt"
+formatted_report=$(echo "$formatted_report" | jq 'if has("generated") then .createdAt = .generated | del(.generated) else . end')
 
 
 # Function to add a random "id" field to JSON
