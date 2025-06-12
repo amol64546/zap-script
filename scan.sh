@@ -7,8 +7,8 @@ if [[ -z "$SWAGGER_DOC_URL" ]]; then
 fi
 
 # Configuration
-ZAP_API_KEY="gaianmobius"
-ZAP_HOST="https://zap.aidtaas.com"
+ZAP_API_KEY="1234"
+ZAP_HOST="http://10.0.0.27:30128"
 OPENAPI_URL="$SWAGGER_DOC_URL"
 
 # Import OpenAPI definition
