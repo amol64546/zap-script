@@ -8,7 +8,7 @@ fi
 
 # Configuration
 ZAP_API_KEY="1234"
-ZAP_HOST="http://10.0.0.27:30128"
+ZAP_HOST="http://10.0.0.27:8080"
 OPENAPI_URL="$SWAGGER_DOC_URL"
 
 # Import OpenAPI definition
