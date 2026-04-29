@@ -8,7 +8,7 @@ fi
 
 # Configuration
 ZAP_API_KEY="1234"
-ZAP_HOST="http://zap-service.zap.svc.cluster.local:8080"
+ZAP_HOST="http://zap-service-service.zap.svc.cluster.local:8080"
 OPENAPI_URL="$SWAGGER_DOC_URL"
 
 # Import OpenAPI definition
